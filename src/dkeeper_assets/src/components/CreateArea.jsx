@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { nanoid } from "nanoid"
-import Fab from '@mui/material/Fab';
+import { Fab } from '@mui/material';
 import AddIcon from '@mui/icons-material/Add';
 import Zoom from '@mui/material/Zoom';
 
