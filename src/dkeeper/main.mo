@@ -1,4 +1,5 @@
 import List "mo:base/List";
+import Array "mo:base/Array";
 import Debug "mo:base/Debug";
 actor DKeeper{
     public type Note =
@@ -15,5 +16,11 @@ actor DKeeper{
         };
         notes:=List.push(newNote, notes);
         Debug.print(debug_show(notes));
+    };
+    
+    public query func readNotes(): async [Note]{
+        // var arr : [Note] = []; 
+        let  arr = List.toArray<Note>(notes);
+        return arr;
     };
 }

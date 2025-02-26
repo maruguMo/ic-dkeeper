@@ -4,6 +4,7 @@ import { Fab } from '@mui/material';
 import AddIcon from '@mui/icons-material/Add';
 import Zoom from '@mui/material/Zoom';
 
+
 function CreateArea(props) {
   const [note, setNote] = useState({
     title: "",
